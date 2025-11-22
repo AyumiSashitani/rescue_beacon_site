@@ -1,10 +1,11 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { FaBell } from 'react-icons/fa'
+import { FaBell, FaTimes, FaBars } from 'react-icons/fa'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,6 +15,17 @@ export default function Header() {
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
+
+  const menuItems = [
+    { href: '#about', label: 'このアプリについて' },
+    { href: '#features', label: '機能紹介' },
+    { href: '#howto', label: '使い方' },
+    { href: '#download', label: 'ダウンロード' },
+  ]
+
+  const handleMenuClick = () => {
+    setMobileMenuOpen(false)
+  }
 
   return (
     <header
@@ -30,56 +42,52 @@ export default function Header() {
             <span className="text-xl font-bold">SOS Beacon</span>
           </div>
 
+          {/* Desktop menu */}
           <ul className="hidden md:flex space-x-8">
-            <li>
-              <a
-                href="#about"
-                className="hover:text-red-600 transition-colors duration-200"
-              >
-                このアプリについて
-              </a>
-            </li>
-            <li>
-              <a
-                href="#features"
-                className="hover:text-red-600 transition-colors duration-200"
-              >
-                機能紹介
-              </a>
-            </li>
-            <li>
-              <a
-                href="#howto"
-                className="hover:text-red-600 transition-colors duration-200"
-              >
-                使い方
-              </a>
-            </li>
-            <li>
-              <a
-                href="#download"
-                className="hover:text-red-600 transition-colors duration-200"
-              >
-                ダウンロード
-              </a>
-            </li>
+            {menuItems.map((item) => (
+              <li key={item.href}>
+                <a
+                  href={item.href}
+                  className="hover:text-red-600 transition-colors duration-200"
+                >
+                  {item.label}
+                </a>
+              </li>
+            ))}
           </ul>
 
           {/* Mobile menu button */}
-          <button className="md:hidden">
-            <svg
-              className="w-6 h-6"
-              fill="none"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+          <button
+            className="md:hidden text-gray-900 dark:text-white"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            aria-label="Toggle menu"
+          >
+            {mobileMenuOpen ? (
+              <FaTimes className="w-6 h-6" />
+            ) : (
+              <FaBars className="w-6 h-6" />
+            )}
           </button>
         </div>
+
+        {/* Mobile menu */}
+        {mobileMenuOpen && (
+          <div className="md:hidden mt-4 pb-4">
+            <ul className="flex flex-col space-y-4">
+              {menuItems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    onClick={handleMenuClick}
+                    className="block py-2 px-4 rounded-lg hover:bg-red-50 dark:hover:bg-gray-800 hover:text-red-600 transition-colors duration-200"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
       </nav>
     </header>
   )
