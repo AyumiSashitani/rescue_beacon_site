@@ -1,0 +1,2 @@
+# rescue_beacon_site
+rescue_beaconの説明サイト
