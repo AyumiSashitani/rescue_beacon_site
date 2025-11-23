@@ -1,13 +1,14 @@
-import type { Metadata } from 'next'
+'use client'
+
 import Link from 'next/link'
 import { FaArrowLeft } from 'react-icons/fa'
+import { LocaleProvider, useLocale } from '@/contexts/LocaleContext'
+import { translations } from '@/locales'
 
-export const metadata: Metadata = {
-  title: '利用規約 - SOS Beacon',
-  description: 'SOS Beacon アプリの利用規約',
-}
+function TermsContent() {
+  const { locale } = useLocale()
+  const t = translations[locale]
 
-export default function TermsPage() {
   return (
     <main className="min-h-screen bg-gray-50 dark:bg-gray-900 py-20">
       <div className="container mx-auto px-6 max-w-4xl">
@@ -16,11 +17,11 @@ export default function TermsPage() {
           className="inline-flex items-center gap-2 text-red-600 hover:text-red-700 mb-8"
         >
           <FaArrowLeft />
-          トップページに戻る
+          {locale === 'ja' ? 'トップページに戻る' : 'Back to Home'}
         </Link>
 
         <h1 className="text-4xl font-bold mb-8 text-gray-900 dark:text-white">
-          利用規約
+          {t.footer.terms}
         </h1>
 
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 space-y-8">
@@ -136,5 +137,13 @@ export default function TermsPage() {
         </div>
       </div>
     </main>
+  )
+}
+
+export default function TermsPage() {
+  return (
+    <LocaleProvider>
+      <TermsContent />
+    </LocaleProvider>
   )
 }
