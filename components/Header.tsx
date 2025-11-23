@@ -1,7 +1,9 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { FaBell, FaTimes, FaBars } from 'react-icons/fa'
+import { FaTimes, FaBars } from 'react-icons/fa'
+import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -37,10 +39,17 @@ export default function Header() {
     >
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <FaBell className="text-red-600 text-2xl" />
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-110">
+              <Image
+                src="/app-icon.png"
+                alt="SOS Beacon Logo"
+                fill
+                className="object-contain"
+              />
+            </div>
             <span className="text-xl font-bold">SOS Beacon</span>
-          </div>
+          </Link>
 
           {/* Desktop menu */}
           <ul className="hidden md:flex space-x-8">

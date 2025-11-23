@@ -1,7 +1,8 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { FaBell, FaBookOpen } from 'react-icons/fa'
+import { FaBookOpen } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Hero() {
   return (
@@ -15,15 +16,27 @@ export default function Hero() {
           <div className="flex justify-center mb-8">
             <motion.div
               animate={{
-                scale: [1, 1.1, 1],
+                scale: [1, 1.05, 1],
+                rotate: [0, 5, 0, -5, 0],
               }}
               transition={{
-                duration: 2,
+                duration: 3,
                 repeat: Infinity,
                 ease: 'easeInOut',
               }}
+              className="relative"
             >
-              <FaBell className="text-8xl text-red-600" />
+              <div className="absolute inset-0 bg-red-600/20 rounded-full blur-3xl"></div>
+              <div className="relative">
+                <Image
+                  src="/app-icon.png"
+                  alt="SOS Beacon App Icon"
+                  width={200}
+                  height={200}
+                  className="drop-shadow-2xl"
+                  priority
+                />
+              </div>
             </motion.div>
           </div>
 
