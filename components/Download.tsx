@@ -1,7 +1,7 @@
 'use client'
 
 import FadeInSection from './FadeInSection'
-import { FaGooglePlay, FaApple } from 'react-icons/fa'
+import Image from 'next/image'
 
 export default function Download() {
   return (
@@ -21,29 +21,33 @@ export default function Download() {
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <FadeInSection delay={0.2}>
-              <button className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 min-w-[200px]">
-                <FaGooglePlay className="text-3xl" />
-                <div className="text-left">
-                  <div className="text-xs uppercase tracking-wide">GET IT ON</div>
-                  <div className="text-lg font-semibold -mt-1">Google Play</div>
-                </div>
+              <div className="group relative cursor-pointer">
+                <Image
+                  src="/google-play-badge.png"
+                  alt="Google Play で手に入れよう"
+                  width={200}
+                  height={77}
+                  className="transition-transform duration-300 hover:scale-105"
+                />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/90 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-sm font-medium">近日リリース予定</span>
+                  <span className="text-sm font-medium text-white">近日リリース予定</span>
                 </div>
-              </button>
+              </div>
             </FadeInSection>
 
             <FadeInSection delay={0.3}>
-              <button className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 min-w-[200px]">
-                <FaApple className="text-4xl" />
-                <div className="text-left">
-                  <div className="text-xs uppercase tracking-wide">Download on the</div>
-                  <div className="text-lg font-semibold -mt-1">App Store</div>
-                </div>
+              <div className="group relative cursor-pointer">
+                <Image
+                  src="/app-store-badge.svg"
+                  alt="Download on the App Store"
+                  width={200}
+                  height={67}
+                  className="transition-transform duration-300 hover:scale-105"
+                />
                 <div className="absolute inset-0 flex items-center justify-center bg-black/90 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <span className="text-sm font-medium">近日リリース予定</span>
+                  <span className="text-sm font-medium text-white">近日リリース予定</span>
                 </div>
-              </button>
+              </div>
             </FadeInSection>
           </div>
 

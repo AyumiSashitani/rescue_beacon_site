@@ -5,7 +5,13 @@
       "Bash(npm run dev:*)",
       "Bash(git add:*)",
       "Bash(git commit:*)",
-      "Bash(git push:*)"
+      "Bash(git push:*)",
+      "WebFetch(domain:partnermarketinghub.withgoogle.com)",
+      "WebFetch(domain:play.google.com)",
+      "Bash(curl:*)",
+      "WebSearch",
+      "WebFetch(domain:visionarybucks.com)",
+      "WebFetch(domain:commons.wikimedia.org)"
     ],
     "deny": [],
     "ask": []
