@@ -11,7 +11,8 @@
       "Bash(curl:*)",
       "WebSearch",
       "WebFetch(domain:visionarybucks.com)",
-      "WebFetch(domain:commons.wikimedia.org)"
+      "WebFetch(domain:commons.wikimedia.org)",
+      "Bash(find:*)"
     ],
     "deny": [],
     "ask": []

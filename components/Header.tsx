@@ -4,10 +4,14 @@ import { useState, useEffect } from 'react'
 import { FaTimes, FaBars } from 'react-icons/fa'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useLocale } from '@/contexts/LocaleContext'
+import { translations } from '@/locales'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const { locale, setLocale } = useLocale()
+  const t = translations[locale]
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,10 +23,10 @@ export default function Header() {
   }, [])
 
   const menuItems = [
-    { href: '#about', label: 'このアプリについて' },
-    { href: '#features', label: '機能紹介' },
-    { href: '#howto', label: '使い方' },
-    { href: '#download', label: 'ダウンロード' },
+    { href: '#about', label: t.nav.about },
+    { href: '#features', label: t.nav.features },
+    { href: '#howto', label: t.nav.howto },
+    { href: '#download', label: t.nav.download },
   ]
 
   const handleMenuClick = () => {
@@ -52,18 +56,30 @@ export default function Header() {
           </Link>
 
           {/* Desktop menu */}
-          <ul className="hidden md:flex space-x-8">
-            {menuItems.map((item) => (
-              <li key={item.href}>
-                <a
-                  href={item.href}
-                  className="hover:text-red-600 transition-colors duration-200"
-                >
-                  {item.label}
-                </a>
-              </li>
-            ))}
-          </ul>
+          <div className="hidden md:flex items-center space-x-8">
+            <ul className="flex space-x-8">
+              {menuItems.map((item) => (
+                <li key={item.href}>
+                  <a
+                    href={item.href}
+                    className="hover:text-red-600 transition-colors duration-200"
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+
+            {/* Language switcher button */}
+            <button
+              onClick={() => setLocale(locale === 'ja' ? 'en' : 'ja')}
+              className="text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400 transition-colors text-sm font-medium border border-gray-300 dark:border-gray-600 px-3 py-1 rounded-md flex items-center gap-1.5"
+              aria-label="Switch language"
+            >
+              <span className="text-base">{locale === 'ja' ? '🇯🇵' : '🇺🇸'}</span>
+              {locale === 'ja' ? 'JA' : 'EN'}
+            </button>
+          </div>
 
           {/* Mobile menu button */}
           <button
@@ -95,6 +111,18 @@ export default function Header() {
                 </li>
               ))}
             </ul>
+
+            {/* Mobile language switcher */}
+            <div className="mt-4 px-4">
+              <button
+                onClick={() => setLocale(locale === 'ja' ? 'en' : 'ja')}
+                className="w-full text-gray-900 dark:text-white hover:text-red-600 dark:hover:text-red-400 transition-colors text-sm font-medium border border-gray-300 dark:border-gray-600 px-3 py-2 rounded-md flex items-center justify-center gap-1.5"
+                aria-label="Switch language"
+              >
+                <span className="text-base">{locale === 'ja' ? '🇯🇵' : '🇺🇸'}</span>
+                {locale === 'ja' ? '日本語' : 'English'}
+              </button>
+            </div>
           </div>
         )}
       </nav>
