@@ -5,6 +5,7 @@ import HowTo from '@/components/HowTo'
 import Download from '@/components/Download'
 import Contact from '@/components/Contact'
 import ScrollToTop from '@/components/ScrollToTop'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -46,11 +47,29 @@ export default function Home() {
       <Contact />
 
       <footer className="bg-gray-900 text-white py-8">
-        <div className="container mx-auto px-6 text-center">
-          <p className="mb-4">
-            &copy; {new Date().getFullYear()} SOS Beacon. All rights reserved.
-          </p>
-          <p className="text-sm text-gray-400">
+        <div className="container mx-auto px-6">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-sm">
+              &copy; {new Date().getFullYear()} SOS Beacon. All rights reserved.
+            </p>
+
+            <div className="flex gap-6 text-sm">
+              <Link
+                href="/terms"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                利用規約
+              </Link>
+              <Link
+                href="/privacy"
+                className="text-gray-400 hover:text-white transition-colors duration-200"
+              >
+                プライバシーポリシー
+              </Link>
+            </div>
+          </div>
+
+          <p className="text-sm text-gray-400 text-center mt-4">
             緊急時に備えて、事前にアプリの動作を確認しておきましょう
           </p>
         </div>
