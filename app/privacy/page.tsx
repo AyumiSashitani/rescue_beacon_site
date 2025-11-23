@@ -166,14 +166,12 @@ function PrivacyContent() {
             <p className="text-gray-600 dark:text-gray-400">
               本プライバシーポリシーに関するご質問やご意見は、
               <a
-                href="https://github.com/AyumiSashitani/rescue_beacon/issues"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="mailto:sashiiii.dev@gmail.com"
                 className="text-red-600 hover:text-red-700 underline"
               >
-                GitHub Issues
+                sashiiii.dev@gmail.com
               </a>
-              よりお問い合わせください。
+              までお問い合わせください。
             </p>
           </section>
 
