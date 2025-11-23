@@ -44,7 +44,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body>
+      <body suppressHydrationWarning>
         {children}
         <Analytics />
         <SpeedInsights />
