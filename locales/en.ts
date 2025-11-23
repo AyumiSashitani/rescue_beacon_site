@@ -60,6 +60,10 @@ export const en = {
       },
     ],
   },
+  screenshots: {
+    title: 'App Screenshots',
+    description: 'Take a look at the actual app screens',
+  },
   howto: {
     title: 'How to Use',
     description: 'Simple 4-step process, easy to use even in emergencies',

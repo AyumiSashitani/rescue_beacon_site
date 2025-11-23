@@ -3,6 +3,7 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Features from '@/components/Features'
+import Screenshots from '@/components/Screenshots'
 import HowTo from '@/components/HowTo'
 import Download from '@/components/Download'
 import Contact from '@/components/Contact'
@@ -36,6 +37,7 @@ function HomeContent() {
       </section>
 
       <Features />
+      <Screenshots />
       <HowTo />
       <Download />
       <Contact />

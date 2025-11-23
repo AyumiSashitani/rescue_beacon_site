@@ -58,6 +58,10 @@ export const ja = {
       },
     ],
   },
+  screenshots: {
+    title: 'アプリ画面',
+    description: '実際のアプリの画面をご覧ください',
+  },
   howto: {
     title: '使い方',
     description: '緊急時でも迷わず使える、シンプルな4ステップ',
