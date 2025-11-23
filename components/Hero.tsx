@@ -44,8 +44,7 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
-            {t.hero.tagline1}
-            <br className="hidden md:block" />
+            <span className="block mb-2 md:mb-4">{t.hero.tagline1}</span>
             {t.hero.tagline2}
           </h1>
 
