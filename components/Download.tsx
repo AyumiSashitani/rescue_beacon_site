@@ -21,10 +21,7 @@ export default function Download() {
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <FadeInSection delay={0.2}>
-              <button
-                disabled
-                className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed min-w-[200px]"
-              >
+              <button className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 min-w-[200px]">
                 <FaGooglePlay className="text-3xl" />
                 <div className="text-left">
                   <div className="text-xs uppercase tracking-wide">GET IT ON</div>
@@ -37,10 +34,7 @@ export default function Download() {
             </FadeInSection>
 
             <FadeInSection delay={0.3}>
-              <button
-                disabled
-                className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed min-w-[200px]"
-              >
+              <button className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 min-w-[200px]">
                 <FaApple className="text-4xl" />
                 <div className="text-left">
                   <div className="text-xs uppercase tracking-wide">Download on the</div>

@@ -45,7 +45,7 @@ export default function Header() {
                 src="/app-icon.png"
                 alt="SOS Beacon Logo"
                 fill
-                className="object-cover scale-[1.25]"
+                className="object-cover scale-[1.15]"
               />
             </div>
             <span className="text-xl font-bold">SOS Beacon</span>

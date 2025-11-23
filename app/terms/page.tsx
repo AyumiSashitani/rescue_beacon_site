@@ -130,7 +130,7 @@ export default function TermsPage() {
 
           <section className="pt-6 border-t border-gray-200 dark:border-gray-700">
             <p className="text-sm text-gray-500 dark:text-gray-400">
-              制定日：2025年1月23日
+              制定日：2025年11月23日
             </p>
           </section>
         </div>
