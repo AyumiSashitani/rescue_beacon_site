@@ -40,12 +40,12 @@ export default function Header() {
       <nav className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-10 h-10 transition-transform duration-300 group-hover:scale-110">
+            <div className="relative w-10 h-10 rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
               <Image
                 src="/app-icon.png"
                 alt="SOS Beacon Logo"
                 fill
-                className="object-contain"
+                className="object-cover scale-110"
               />
             </div>
             <span className="text-xl font-bold">SOS Beacon</span>
