@@ -12,7 +12,8 @@
       "WebSearch",
       "WebFetch(domain:visionarybucks.com)",
       "WebFetch(domain:commons.wikimedia.org)",
-      "Bash(find:*)"
+      "Bash(find:*)",
+      "WebFetch(domain:www.saigaichousa-db-isad.jp)"
     ],
     "deny": [],
     "ask": []

@@ -10,7 +10,7 @@ export const ja = {
     download: 'ダウンロード',
   },
   hero: {
-    tagline1: '声が届かなくても、',
+    tagline1: '声が届かなくても',
     tagline2: '音が届く',
     appName: 'SOS Beacon',
     description: 'オフラインで動作する、命をつなぐSOSアプリ',
