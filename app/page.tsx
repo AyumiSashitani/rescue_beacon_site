@@ -36,8 +36,8 @@ function HomeContent() {
         </div>
       </section>
 
-      <Features />
       <Screenshots />
+      <Features />
       <HowTo />
       <Download />
       <Contact />
