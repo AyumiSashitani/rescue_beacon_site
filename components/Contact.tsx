@@ -1,7 +1,7 @@
 'use client'
 
 import FadeInSection from './FadeInSection'
-import { FaGithub, FaExclamationTriangle } from 'react-icons/fa'
+import { FaExclamationTriangle } from 'react-icons/fa'
 
 export default function Contact() {
   return (
@@ -74,26 +74,6 @@ export default function Contact() {
                   </div>
                 </div>
               </div>
-            </div>
-          </FadeInSection>
-
-          <FadeInSection delay={0.5}>
-            <div className="bg-white dark:bg-gray-900 p-6 rounded-xl shadow-lg">
-              <h3 className="text-xl font-semibold mb-3 text-gray-900 dark:text-white">
-                バグを見つけた場合はどうすればいいですか？
-              </h3>
-              <p className="text-gray-600 dark:text-gray-400 mb-4">
-                バグレポートや改善提案は、GitHubのIssuesページでお知らせください。
-              </p>
-              <a
-                href="https://github.com/AyumiSashitani/rescue_beacon/issues"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-gray-900 hover:bg-gray-800 text-white px-6 py-3 rounded-lg transition-all duration-300"
-              >
-                <FaGithub className="text-xl" />
-                GitHub Issues
-              </a>
             </div>
           </FadeInSection>
         </div>

@@ -1,7 +1,7 @@
 'use client'
 
 import FadeInSection from './FadeInSection'
-import { FaAndroid, FaApple } from 'react-icons/fa'
+import { FaGooglePlay, FaApple } from 'react-icons/fa'
 
 export default function Download() {
   return (
@@ -18,51 +18,53 @@ export default function Download() {
           </div>
         </FadeInSection>
 
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="max-w-3xl mx-auto">
+          <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <FadeInSection delay={0.2}>
-              <div className="bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <FaAndroid className="text-7xl text-green-600 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
-                  Android版
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-6">
-                  対応OS: Android 6.0以上
-                </p>
-                <div className="bg-white dark:bg-gray-800 p-4 rounded-lg mb-4">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    近日リリース予定
-                  </p>
+              <button
+                disabled
+                className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed min-w-[200px]"
+              >
+                <FaGooglePlay className="text-3xl" />
+                <div className="text-left">
+                  <div className="text-xs uppercase tracking-wide">GET IT ON</div>
+                  <div className="text-lg font-semibold -mt-1">Google Play</div>
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  Google Play Storeで配信予定
-                </p>
-              </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-black/90 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-sm font-medium">近日リリース予定</span>
+                </div>
+              </button>
             </FadeInSection>
 
             <FadeInSection delay={0.3}>
-              <div className="bg-gradient-to-br from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700 p-8 rounded-xl text-center shadow-lg hover:shadow-xl transition-shadow duration-300">
-                <FaApple className="text-7xl text-gray-700 dark:text-gray-300 mx-auto mb-4" />
-                <h3 className="text-2xl font-semibold mb-4 text-gray-900 dark:text-white">
-                  iOS版
-                </h3>
-                <p className="text-gray-600 dark:text-gray-400 mb-6">
-                  対応OS: iOS 12.0以上
-                </p>
-                <div className="bg-white dark:bg-gray-900 p-4 rounded-lg mb-4">
-                  <p className="text-sm text-gray-500 dark:text-gray-400">
-                    近日リリース予定
-                  </p>
+              <button
+                disabled
+                className="group relative inline-flex items-center gap-3 bg-black text-white px-8 py-4 rounded-lg transition-all duration-300 hover:bg-gray-900 disabled:opacity-50 disabled:cursor-not-allowed min-w-[200px]"
+              >
+                <FaApple className="text-4xl" />
+                <div className="text-left">
+                  <div className="text-xs uppercase tracking-wide">Download on the</div>
+                  <div className="text-lg font-semibold -mt-1">App Store</div>
                 </div>
-                <p className="text-xs text-gray-500 dark:text-gray-400">
-                  App Storeで配信予定
-                </p>
-              </div>
+                <div className="absolute inset-0 flex items-center justify-center bg-black/90 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="text-sm font-medium">近日リリース予定</span>
+                </div>
+              </button>
             </FadeInSection>
           </div>
 
           <FadeInSection delay={0.4}>
-            <div className="mt-12 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 rounded">
+            <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                <span className="font-semibold text-gray-900 dark:text-white">対応OS:</span>
+                <br className="sm:hidden" />
+                <span className="sm:ml-2">Android 6.0以上 / iOS 12.0以上</span>
+              </p>
+            </div>
+          </FadeInSection>
+
+          <FadeInSection delay={0.5}>
+            <div className="mt-8 bg-yellow-50 dark:bg-yellow-900/20 border-l-4 border-yellow-600 p-6 rounded">
               <h4 className="font-semibold text-gray-900 dark:text-white mb-2">
                 免責事項
               </h4>

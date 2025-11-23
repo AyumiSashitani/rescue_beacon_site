@@ -46,7 +46,7 @@ npm install
 npm run dev
 ```
 
-開発サーバーが起動したら http://localhost:3000 にアクセス
+開発サーバーが起動したら <http://localhost:3000> にアクセス
 
 ### ビルド
 
@@ -123,9 +123,7 @@ mainブランチへのプッシュで自動的に本番環境がデプロイさ�
 
 ## 連絡先
 
-- **GitHub**: https://github.com/AyumiSashitani
-- **X (Twitter)**: https://x.com/sashiiii_dev
-- **LinkedIn**: https://www.linkedin.com/in/ayumi-sashitani-79374a1b9/
+- **GitHub**: <https://github.com/AyumiSashitani>
 
 ## 関連リンク
 

@@ -17,7 +17,6 @@ export default function Hero() {
             <motion.div
               animate={{
                 scale: [1, 1.05, 1],
-                rotate: [0, 5, 0, -5, 0],
               }}
               transition={{
                 duration: 3,
@@ -27,13 +26,13 @@ export default function Hero() {
               className="relative"
             >
               <div className="absolute inset-0 bg-red-600/20 rounded-full blur-3xl"></div>
-              <div className="relative">
+              <div className="relative bg-gradient-to-br from-red-50 to-orange-50 dark:from-gray-800 dark:to-gray-700 rounded-full p-4">
                 <Image
                   src="/app-icon.png"
                   alt="SOS Beacon App Icon"
                   width={200}
                   height={200}
-                  className="drop-shadow-2xl"
+                  className="drop-shadow-2xl rounded-full"
                   priority
                 />
               </div>

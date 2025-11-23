@@ -5,6 +5,7 @@ import Script from 'next/script'
 import './globals.css'
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://rescue-beacon-site.vercel.app'),
   title: 'SOS Beacon - 災害時SOSアプリ',
   description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ。完全オフラインで動作し、バッテリー消費を抑えながら継続的にSOS信号を発信できます。',
   keywords: ['SOS', '災害', '緊急', 'ビーコン', 'Flutter', 'アプリ', 'オフライン', '救助'],
