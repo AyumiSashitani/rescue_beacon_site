@@ -45,6 +45,10 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body>
+        {children}
+        <Analytics />
+        <SpeedInsights />
+
         {/* Google Analytics */}
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-1YC3WJMEYV"
@@ -58,10 +62,6 @@ export default function RootLayout({
             gtag('config', 'G-1YC3WJMEYV');
           `}
         </Script>
-
-        {children}
-        <Analytics />
-        <SpeedInsights />
       </body>
     </html>
   )
