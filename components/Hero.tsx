@@ -27,16 +27,21 @@ export default function Hero() {
             </motion.div>
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white">
-            SOS Beacon
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
+            もしもの時、<br className="hidden md:block" />
+            あなたを守る
           </h1>
 
-          <p className="text-xl md:text-2xl text-gray-700 dark:text-gray-300 mb-4">
-            災害時SOSアプリ
+          <p className="text-2xl md:text-3xl text-red-600 font-semibold mb-4">
+            SOS Beacon
           </p>
 
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12">
-            通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ
+          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-2">
+            災害時SOSビーコンアプリ
+          </p>
+
+          <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12">
+            通信不能でも、自分の存在を周囲に知らせ続ける
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
