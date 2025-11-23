@@ -32,7 +32,7 @@ export default function Hero() {
                   alt="SOS Beacon App Icon"
                   width={200}
                   height={200}
-                  className="object-cover w-full h-full scale-110"
+                  className="object-cover w-full h-full scale-[1.25]"
                   priority
                 />
               </div>
