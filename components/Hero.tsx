@@ -28,20 +28,16 @@ export default function Hero() {
           </div>
 
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
-            もしもの時、<br className="hidden md:block" />
-            あなたを守る
+            声が届かなくても、<br className="hidden md:block" />
+            音が届く
           </h1>
 
           <p className="text-2xl md:text-3xl text-red-600 font-semibold mb-4">
             SOS Beacon
           </p>
 
-          <p className="text-lg md:text-xl text-gray-700 dark:text-gray-300 mb-2">
-            災害時SOSビーコンアプリ
-          </p>
-
           <p className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-3xl mx-auto mb-12">
-            通信不能でも、自分の存在を周囲に知らせ続ける
+            オフラインで動作する、命をつなぐSOSアプリ
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
