@@ -24,8 +24,13 @@ export default function Download() {
 
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
-            <div className="group relative cursor-pointer transform transition-transform hover:scale-105">
-              <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ayumisashitani.sosbeacon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-105"
+            >
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={googlePlayBadge}
                   alt={t.download.googlePlayAlt}
@@ -33,11 +38,8 @@ export default function Download() {
                   height={77}
                   className="w-auto h-[60px]"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-900/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm">
-                  <span className="text-sm font-bold text-white tracking-wider uppercase">{t.download.comingSoon}</span>
-                </div>
               </div>
-            </div>
+            </a>
 
             <div className="group relative cursor-pointer transform transition-transform hover:scale-105">
               <div className="relative rounded-lg overflow-hidden shadow-lg">
