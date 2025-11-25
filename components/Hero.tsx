@@ -1,10 +1,10 @@
 'use client'
 
-import {useLocale} from '@/contexts/LocaleContext'
-import {translations} from '@/locales'
-import {motion} from 'framer-motion'
+import { useLocale } from '@/contexts/LocaleContext'
+import { translations } from '@/locales'
+import { motion } from 'framer-motion'
 import Image from 'next/image'
-import {FaBookOpen} from 'react-icons/fa'
+import { FaBookOpen } from 'react-icons/fa'
 
 export default function Hero() {
   const { locale } = useLocale()
@@ -24,26 +24,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <div className="flex justify-center mb-10">
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              className="relative group"
-            >
-              <div className="absolute inset-0 bg-primary-500/30 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500" />
-              <div className="relative w-[180px] h-[180px] shadow-2xl">
-                <Image
-                  src="/app-icon.png"
-                  alt="SOS Beacon App Icon"
-                  width={180}
-                  height={180}
-                  className="object-contain w-full h-full"
-                  priority
-                />
-              </div>
-            </motion.div>
-          </div>
-
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 text-gray-900 dark:text-white leading-tight tracking-tight font-heading">
+          <h1 className="text-5xl md:text-7xl font-bold mb-10 text-gray-900 dark:text-white leading-tight tracking-tight font-heading">
             <span className="block mb-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
               {t.hero.tagline1}
             </span>
@@ -51,6 +32,27 @@ export default function Hero() {
               {t.hero.tagline2}
             </span>
           </h1>
+
+          <div className="flex justify-center mb-10">
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              className="relative group"
+            >
+              <div className="absolute inset-0 bg-primary-500/30 rounded-full blur-2xl group-hover:blur-3xl transition-all duration-500" />
+              <div className="relative w-[180px] h-[180px] shadow-2xl rounded-full overflow-hidden">
+                <Image
+                  src="/app-icon.png"
+                  alt="SOS Beacon App Icon"
+                  width={180}
+                  height={180}
+                  className="object-contain w-full h-full scale-[1.15]"
+                  priority
+                />
+              </div>
+            </motion.div>
+          </div>
+
+
 
           <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-medium mb-6 tracking-wide">
             {t.hero.appName}
