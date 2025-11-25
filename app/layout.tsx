@@ -2,7 +2,11 @@ import type { Metadata } from 'next'
 import { Analytics } from '@vercel/analytics/react'
 import { SpeedInsights } from '@vercel/speed-insights/next'
 import Script from 'next/script'
+import { Inter, Outfit } from 'next/font/google'
 import './globals.css'
+
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://rescue-beacon-site.vercel.app'),
@@ -16,12 +20,13 @@ export const metadata: Metadata = {
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ',
     type: 'website',
     locale: 'ja_JP',
+    alternateLocale: 'en_US',
     images: [
       {
-        url: '/og-image.png',
-        width: 1024,
-        height: 1024,
-        alt: 'SOS Beacon App Icon',
+        url: '/ogp_ja.png',
+        width: 1200,
+        height: 630,
+        alt: 'SOS Beacon - ワンタップでSOSを送信',
       },
     ],
   },
@@ -30,7 +35,7 @@ export const metadata: Metadata = {
     title: 'SOS Beacon - 災害時SOSアプリ',
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ',
     creator: '@sashiiii_dev',
-    images: ['/og-image.png'],
+    images: ['/ogp_ja.png'],
   },
   robots: {
     index: true,
@@ -44,8 +49,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="ja">
-      <body suppressHydrationWarning>
+    <html lang="ja" className={`${inter.variable} ${outfit.variable}`}>
+      <body suppressHydrationWarning className="font-sans antialiased">
         {children}
         <Analytics />
         <SpeedInsights />
