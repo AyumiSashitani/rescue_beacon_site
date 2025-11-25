@@ -22,7 +22,7 @@ export const en = {
   about: {
     title: 'About This App',
     description:
-      'SOS Beacon is an emergency SOS app that allows you to signal your location to others using sound and light, even when communication infrastructure is unavailable during disasters.',
+      'SOS Beacon is an emergency SOS app that allows you to signal your location to others using sound and light, even when communication infrastructure is unavailable during disasters. According to Japan\'s Earthquake Research Committee, there is a 60-90% or higher probability of a major Nankai Trough earthquake occurring within the next 30 years. Prepare now for large-scale disasters that can happen at any time.',
   },
   features: {
     title: 'Key Features',

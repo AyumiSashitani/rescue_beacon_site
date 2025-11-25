@@ -1,6 +1,5 @@
 'use client'
 
-import FadeInSection from './FadeInSection'
 import Image from 'next/image'
 import { useLocale } from '@/contexts/LocaleContext'
 import { translations } from '@/locales'
@@ -26,19 +25,17 @@ export default function Screenshots() {
         <div className="max-w-5xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {screenshots.map((screenshot, index) => (
-              <FadeInSection key={index} delay={index * 0.2}>
-                <div className="bg-white dark:bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
-                  <div className="relative aspect-[9/16] overflow-hidden rounded-lg">
-                    <Image
-                      src={screenshot.src}
-                      alt={screenshot.alt}
-                      fill
-                      className="object-contain"
-                      sizes="(max-width: 768px) 100vw, 50vw"
-                    />
-                  </div>
+              <div key={index} className="bg-white dark:bg-gray-900 p-4 rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">
+                <div className="relative aspect-[9/16] overflow-hidden rounded-lg">
+                  <Image
+                    src={screenshot.src}
+                    alt={screenshot.alt}
+                    fill
+                    className="object-contain"
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                  />
                 </div>
-              </FadeInSection>
+              </div>
             ))}
           </div>
         </div>

@@ -1,11 +1,11 @@
+
 'use client'
 
-import { useState, useEffect } from 'react'
-import { FaTimes, FaBars } from 'react-icons/fa'
-import Image from 'next/image'
-import Link from 'next/link'
 import { useLocale } from '@/contexts/LocaleContext'
 import { translations } from '@/locales'
+import Link from 'next/link'
+import { useEffect, useState } from 'react'
+import { FaBars, FaTimes } from 'react-icons/fa'
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false)
@@ -35,24 +35,19 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed w-full z-50 transition-all duration-300 ${
         scrolled
-          ? 'bg-white/95 dark:bg-gray-900/95 shadow-md backdrop-blur-sm'
-          : 'bg-transparent'
+          ? 'bg-white/80 dark:bg-gray-900/80 backdrop-blur-md shadow-sm py-3'
+          : 'bg-transparent py-5'
       }`}
     >
-      <nav className="container mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="relative w-10 h-10 rounded-full overflow-hidden transition-transform duration-300 group-hover:scale-110">
-              <Image
-                src="/app-icon.png"
-                alt="SOS Beacon Logo"
-                fill
-                className="object-cover scale-[1.15]"
-              />
-            </div>
-            <span className="text-xl font-bold">SOS Beacon</span>
+      <div className="container mx-auto px-6">
+        <nav className="flex justify-between items-center">
+          <Link
+            href="/"
+            className="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2 font-heading"
+          >
+            <span className="text-primary-600">SOS</span> Beacon
           </Link>
 
           {/* Desktop menu */}
@@ -62,7 +57,7 @@ export default function Header() {
                 <li key={item.href}>
                   <a
                     href={item.href}
-                    className="hover:text-red-600 transition-colors duration-200"
+                    className="text-gray-600 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 transition-colors duration-200 font-medium"
                   >
                     {item.label}
                   </a>
@@ -93,7 +88,7 @@ export default function Header() {
               <FaBars className="w-6 h-6" />
             )}
           </button>
-        </div>
+        </nav>
 
         {/* Mobile menu */}
         {mobileMenuOpen && (
@@ -125,7 +120,7 @@ export default function Header() {
             </div>
           </div>
         )}
-      </nav>
+      </div>
     </header>
   )
 }

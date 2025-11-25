@@ -5,8 +5,8 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --primary: #dc2626;
-  --primary-dark: #991b1b;
+  --primary: #E11D48;
+  --primary-dark: #BE123C;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,10 +16,14 @@
   }
 }
 
+::selection {
+  background-color: var(--primary);
+  color: white;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 @layer utilities {
