@@ -25,10 +25,10 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold mb-10 text-gray-900 dark:text-white leading-tight tracking-tight font-heading">
-            <span className="block mb-2 text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
+            <span className="block mb-2 whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
               {t.hero.tagline1}
             </span>
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-orange-600 dark:from-primary-400 dark:to-orange-400">
+            <span className="whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-orange-600 dark:from-primary-400 dark:to-orange-400">
               {t.hero.tagline2}
             </span>
           </h1>
