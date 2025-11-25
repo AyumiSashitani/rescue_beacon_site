@@ -24,7 +24,10 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl md:text-7xl font-bold mb-10 text-gray-900 dark:text-white leading-tight tracking-tight font-heading">
+          <h1
+            className="font-bold mb-10 text-gray-900 dark:text-white leading-tight tracking-tight font-heading"
+            style={{ fontSize: 'clamp(2.5rem, 10vw, 4.5rem)' }}
+          >
             <span className="block mb-2 whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-gray-900 to-gray-600 dark:from-white dark:to-gray-300">
               {t.hero.tagline1}
             </span>
