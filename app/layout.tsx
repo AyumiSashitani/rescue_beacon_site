@@ -32,10 +32,14 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@sashiiii_dev',
+    creator: '@sashiiii_dev',
     title: 'SOS Beacon - 災害時SOSアプリ',
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ',
-    creator: '@sashiiii_dev',
-    images: ['/ogp_ja.png'],
+    images: {
+      url: 'https://rescue-beacon-site.vercel.app/ogp_ja.png',
+      alt: 'SOS Beacon - ワンタップでSOSを送信',
+    },
   },
   robots: {
     index: true,
