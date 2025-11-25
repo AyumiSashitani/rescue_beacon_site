@@ -145,6 +145,15 @@ export const en = {
       },
     ],
   },
+  developerMessage: {
+    title: "Developer's Message",
+    content: [
+      'This app was developed with the hope that even when you cannot call for help during a disaster, you can signal your location using sound and light.',
+      'Japan has experienced many disasters, including the 2011 Great East Japan Earthquake and the 2024 Noto Peninsula Earthquake. The Nankai Trough earthquake is said to be imminent.',
+      'The SOS signal function works without an internet connection. It can be used as long as the battery lasts, even in areas without cellular coverage. We collect anonymous crash reports to improve the app quality, but we do not collect any personally identifiable information.',
+      "I hope this app can help save someone's life when the time comes. It's best if you never have to use it, but please keep it as a precaution.",
+    ],
+  },
   footer: {
     copyright: '© 2025 Ayumi Sashitani. All rights reserved.',
     terms: 'Terms of Service',

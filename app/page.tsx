@@ -59,6 +59,21 @@ function HomeContent() {
       <Download />
       <Contact />
 
+      <section className="py-16 bg-gray-100 dark:bg-gray-900">
+        <div className="container mx-auto px-6">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-2xl font-semibold mb-6 text-center text-gray-700 dark:text-gray-300">
+              {t.developerMessage.title}
+            </h2>
+            <div className="space-y-4 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+              {t.developerMessage.content.map((paragraph, index) => (
+                <p key={index}>{paragraph}</p>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       <footer className="bg-gray-900 text-white py-8">
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-4">
