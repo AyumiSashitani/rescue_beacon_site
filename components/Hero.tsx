@@ -61,7 +61,7 @@ export default function Hero() {
             {t.hero.appName}
           </p>
 
-          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed">
+          <p className="text-lg md:text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto mb-12 leading-relaxed whitespace-pre-line">
             {t.hero.description}
           </p>
 

@@ -13,7 +13,7 @@ export const ja = {
     tagline1: '声が届かなくても',
     tagline2: '音が届く',
     appName: 'SOS Beacon',
-    description: 'オフラインで動作する、命をつなぐSOSアプリ',
+    description: 'オフラインで動作する、\n命をつなぐSOSアプリ',
     downloadNow: '今すぐダウンロード',
     howToUse: '使い方を見る',
     features: '完全オフラインで動作 • バッテリー省電力設計 • 多言語対応',
