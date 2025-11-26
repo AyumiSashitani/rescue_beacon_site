@@ -65,7 +65,7 @@ function HomeContent() {
             <h2 className="text-2xl font-semibold mb-6 text-center text-gray-700 dark:text-gray-300">
               {t.developerMessage.title}
             </h2>
-            <div className="space-y-4 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
+            <div className="space-y-2 text-gray-600 dark:text-gray-400 text-sm leading-relaxed">
               {t.developerMessage.content.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
