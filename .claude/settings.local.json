@@ -31,7 +31,8 @@
       "Bash(( +clone -channel A -evaluate set 0 +channel -fill white -draw \"circle 256,256 256,0\" ) )",
       "Bash(/Users/apple/Documents/Source/rescue_beacon_site/public/app-icon-step1.png)",
       "Bash(( +clone -fill black -colorize 100% -fill white -draw \"circle 256,256 256,1\" ) )",
-      "Bash(( +clone -fill black -colorize 100% -fill white -draw \"circle 256,256 256,0\" ) )"
+      "Bash(( +clone -fill black -colorize 100% -fill white -draw \"circle 256,256 256,0\" ) )",
+      "Bash(npm run build:*)"
     ],
     "deny": [],
     "ask": []

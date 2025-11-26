@@ -4,7 +4,7 @@ import { useLocale } from '@/contexts/LocaleContext'
 import { translations } from '@/locales'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { FaBookOpen } from 'react-icons/fa'
+import { FaBookOpen, FaGooglePlay, FaApple } from 'react-icons/fa'
 
 export default function Hero() {
   const { locale } = useLocale()
@@ -65,19 +65,33 @@ export default function Hero() {
             {t.hero.description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-5 justify-center items-center">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
             <a
-              href="#download"
-              className="group bg-primary-600 hover:bg-primary-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg shadow-primary-600/30 hover:shadow-primary-600/50 hover:-translate-y-1 flex items-center gap-2"
+              href="https://apps.apple.com/jp/app/sos-%E3%83%93%E3%83%BC%E3%82%B3%E3%83%B3/id6755646233"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center gap-2"
             >
-              {t.hero.downloadNow}
-              <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+              <FaApple className="text-xl" />
+              App Store
             </a>
             <a
-              href="#howto"
-              className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-sm hover:bg-white dark:hover:bg-gray-700 text-gray-900 dark:text-white border border-gray-200 dark:border-gray-700 px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center gap-2"
+              href="https://play.google.com/store/apps/details?id=com.ayumisashitani.sosbeacon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg shadow-primary-600/30 hover:shadow-primary-600/50 hover:-translate-y-1 flex items-center gap-2"
             >
-              <FaBookOpen className="text-lg" />
+              <FaGooglePlay className="text-lg" />
+              Google Play
+            </a>
+          </div>
+
+          <div className="flex justify-center">
+            <a
+              href="#howto"
+              className="text-gray-600 dark:text-gray-400 hover:text-primary-600 dark:hover:text-primary-400 font-medium text-base transition-colors flex items-center gap-2"
+            >
+              <FaBookOpen className="text-base" />
               {t.hero.howToUse}
             </a>
           </div>

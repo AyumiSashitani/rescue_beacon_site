@@ -41,8 +41,13 @@ export default function Download() {
               </div>
             </a>
 
-            <div className="group relative cursor-pointer transform transition-transform hover:scale-105">
-              <div className="relative rounded-lg overflow-hidden shadow-lg">
+            <a
+              href="https://apps.apple.com/jp/app/sos-%E3%83%93%E3%83%BC%E3%82%B3%E3%83%B3/id6755646233"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-105"
+            >
+              <div className="rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={appStoreBadge}
                   alt={t.download.appStoreAlt}
@@ -50,11 +55,8 @@ export default function Download() {
                   height={67}
                   className="w-auto h-[60px]"
                 />
-                <div className="absolute inset-0 flex items-center justify-center bg-gray-900/90 opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-sm">
-                  <span className="text-sm font-bold text-white tracking-wider uppercase">{t.download.comingSoon}</span>
-                </div>
               </div>
-            </div>
+            </a>
           </div>
 
           <div className="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl text-center">
