@@ -4,7 +4,7 @@ import { useLocale } from '@/contexts/LocaleContext'
 import { translations } from '@/locales'
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-import { FaBookOpen, FaGooglePlay, FaApple } from 'react-icons/fa'
+import { FaBookOpen } from 'react-icons/fa'
 
 export default function Hero() {
   const { locale } = useLocale()
@@ -65,24 +65,34 @@ export default function Hero() {
             {t.hero.description}
           </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-6">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
             <a
               href="https://apps.apple.com/jp/app/sos-%E3%83%93%E3%83%BC%E3%82%B3%E3%83%B3/id6755646233"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-gray-900 hover:bg-gray-800 dark:bg-white dark:hover:bg-gray-100 text-white dark:text-gray-900 px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg hover:shadow-xl hover:-translate-y-1 flex items-center gap-2"
+              className="transform transition-transform hover:scale-105"
             >
-              <FaApple className="text-xl" />
-              App Store
+              <Image
+                src={locale === 'ja' ? '/app-store-badge-jp.svg' : '/app-store-badge-en.svg'}
+                alt="Download on the App Store"
+                width={150}
+                height={50}
+                className="h-[50px] w-auto"
+              />
             </a>
             <a
               href="https://play.google.com/store/apps/details?id=com.ayumisashitani.sosbeacon"
               target="_blank"
               rel="noopener noreferrer"
-              className="group bg-primary-600 hover:bg-primary-700 text-white px-6 py-3 rounded-full font-bold text-base transition-all duration-300 shadow-lg shadow-primary-600/30 hover:shadow-primary-600/50 hover:-translate-y-1 flex items-center gap-2"
+              className="transform transition-transform hover:scale-105"
             >
-              <FaGooglePlay className="text-lg" />
-              Google Play
+              <Image
+                src={locale === 'ja' ? '/google-play-badge-ja.png' : '/google-play-badge-en.png'}
+                alt="Get it on Google Play"
+                width={170}
+                height={50}
+                className="h-[50px] w-auto"
+              />
             </a>
           </div>
 
