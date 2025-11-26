@@ -47,7 +47,7 @@ export default function Header() {
             href="/"
             className="text-2xl font-bold text-gray-900 dark:text-white flex items-center gap-2 font-heading"
           >
-            <span className="text-primary-600">SOS</span> Beacon
+            <span className="text-primary-600">SOS</span> {locale === 'ja' ? 'ビーコン' : 'Flare'}
           </Link>
 
           {/* Desktop menu */}
