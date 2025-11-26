@@ -11,11 +11,11 @@ export default function Screenshots() {
   const screenshots = [
     {
       src: locale === 'ja' ? '/sos_beacon_ja_1.jpg' : '/sos_beacon_en_1.jpg',
-      alt: locale === 'ja' ? 'SOS Beacon メイン画面' : 'SOS Beacon Main Screen',
+      alt: locale === 'ja' ? 'SOS ビーコン メイン画面' : 'SOS Flare Main Screen',
     },
     {
       src: locale === 'ja' ? '/sos_beacon_ja_2.jpg' : '/sos_beacon_en_2.jpg',
-      alt: locale === 'ja' ? 'SOS Beacon 設定画面' : 'SOS Beacon Settings Screen',
+      alt: locale === 'ja' ? 'SOS ビーコン 設定画面' : 'SOS Flare Settings Screen',
     },
   ]
 

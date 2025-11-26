@@ -1,8 +1,8 @@
 export const en = {
   metadata: {
-    title: 'SOS Beacon - Emergency SOS App for Disasters',
+    title: 'SOS Flare - Emergency SOS App for Disasters',
     description:
-      'An SOS beacon app that helps you signal your presence to others even when communication infrastructure is unavailable during disasters. Works completely offline with battery-efficient continuous SOS signal transmission.',
+      'An SOS Flare app that helps you signal your presence to others even when communication infrastructure is unavailable during disasters. Works completely offline with battery-efficient continuous SOS signal transmission.',
   },
   nav: {
     about: 'About',
@@ -13,7 +13,7 @@ export const en = {
   hero: {
     tagline1: 'When your voice cannot reach,',
     tagline2: 'sound reaches',
-    appName: 'SOS Beacon',
+    appName: 'SOS Flare',
     description: 'A life-saving SOS app that works offline',
     downloadNow: 'Download Now',
     howToUse: 'See How to Use',
@@ -22,7 +22,7 @@ export const en = {
   about: {
     title: 'About This App',
     description:
-      'SOS Beacon is an emergency SOS app that allows you to signal your location to others using sound and light, even when communication infrastructure is unavailable during disasters. According to Japan\'s Earthquake Research Committee, there is a 60-90% or higher probability of a major Nankai Trough earthquake occurring within the next 30 years. Prepare now for large-scale disasters that can happen at any time.',
+      'SOS Flare is an emergency SOS app that allows you to signal your location to others using sound and light, even when communication infrastructure is unavailable during disasters. According to Japan\'s Earthquake Research Committee, there is a 60-90% or higher probability of a major Nankai Trough earthquake occurring within the next 30 years. Prepare now for large-scale disasters that can happen at any time.',
   },
   features: {
     title: 'Key Features',
@@ -102,7 +102,7 @@ export const en = {
   },
   download: {
     title: 'Download',
-    description: 'Download SOS Beacon now and be prepared for emergencies',
+    description: 'Download SOS Flare now and be prepared for emergencies',
     comingSoon: 'Coming Soon',
     googlePlayAlt: 'Get it on Google Play',
     appStoreAlt: 'Download on the App Store',
@@ -118,7 +118,7 @@ export const en = {
   },
   faq: {
     title: 'FAQ',
-    description: 'Frequently asked questions about SOS Beacon',
+    description: 'Frequently asked questions about SOS Flare',
     questions: [
       {
         question: 'Is an internet connection required?',

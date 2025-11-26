@@ -10,13 +10,13 @@ const outfit = Outfit({ subsets: ['latin'], variable: '--font-outfit' })
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://sos-beacon.vercel.app'),
-  title: 'SOS Beacon - 災害時SOSアプリ',
+  title: 'SOS ビーコン - 災害時SOSアプリ',
   description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ。完全オフラインで動作し、バッテリー消費を抑えながら継続的にSOS信号を発信できます。',
   keywords: ['SOS', '災害', '緊急', 'ビーコン', 'Flutter', 'アプリ', 'オフライン', '救助'],
   authors: [{ name: 'Ayumi Sashitani' }],
   creator: 'Ayumi Sashitani',
   openGraph: {
-    title: 'SOS Beacon - 災害時SOSアプリ',
+    title: 'SOS ビーコン - 災害時SOSアプリ',
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ',
     type: 'website',
     locale: 'ja_JP',
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
         url: '/ogp.jpg',
         width: 1200,
         height: 630,
-        alt: 'SOS Beacon - ワンタップでSOSを送信',
+        alt: 'SOS ビーコン - ワンタップでSOSを送信',
       },
     ],
   },
@@ -34,11 +34,11 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     site: '@sashiiii_dev',
     creator: '@sashiiii_dev',
-    title: 'SOS Beacon - 災害時SOSアプリ',
+    title: 'SOS ビーコン - 災害時SOSアプリ',
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ',
     images: {
       url: 'https://sos-beacon.vercel.app/ogp.jpg',
-      alt: 'SOS Beacon - ワンタップでSOSを送信',
+      alt: 'SOS ビーコン - ワンタップでSOSを送信',
     },
   },
   robots: {

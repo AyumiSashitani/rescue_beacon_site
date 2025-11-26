@@ -27,7 +27,7 @@ function PrivacyContent() {
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 space-y-8">
           <section>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              SOS Beacon（以下、「本アプリ」といいます）は、ユーザーのプライバシーを尊重し、
+              SOS ビーコン（以下、「本アプリ」といいます）は、ユーザーのプライバシーを尊重し、
               個人情報の保護に努めています。本プライバシーポリシーは、
               本アプリにおける個人情報の取り扱いについて説明するものです。
             </p>

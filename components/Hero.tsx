@@ -45,7 +45,7 @@ export default function Hero() {
               <div className="relative w-[180px] h-[180px] shadow-2xl rounded-full overflow-hidden">
                 <Image
                   src="/app-icon.png"
-                  alt="SOS Beacon App Icon"
+                  alt="SOS ビーコン App Icon"
                   width={180}
                   height={180}
                   className="object-contain w-full h-full scale-[1.15]"

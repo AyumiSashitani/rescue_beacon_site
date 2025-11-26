@@ -27,7 +27,7 @@ function TermsContent() {
         <div className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-8 space-y-8">
           <section>
             <p className="text-gray-600 dark:text-gray-400 mb-6">
-              この利用規約（以下、「本規約」といいます）は、SOS Beacon（以下、「本アプリ」といいます）の利用条件を定めるものです。
+              この利用規約（以下、「本規約」といいます）は、SOS ビーコン（以下、「本アプリ」といいます）の利用条件を定めるものです。
               本アプリをご利用される方（以下、「ユーザー」といいます）は、本規約に同意したものとみなされます。
             </p>
           </section>

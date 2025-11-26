@@ -1,6 +1,6 @@
 export const ja = {
   metadata: {
-    title: 'SOS Beacon - 災害時SOSアプリ',
+    title: 'SOS ビーコン - 災害時SOSアプリ',
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ。完全オフラインで動作し、バッテリー消費を抑えながら継続的にSOS信号を発信できます。',
   },
   nav: {
@@ -12,7 +12,7 @@ export const ja = {
   hero: {
     tagline1: '声が届かなくても',
     tagline2: '音が届く',
-    appName: 'SOS Beacon',
+    appName: 'SOS ビーコン',
     description: 'オフラインで動作する、\n命をつなぐSOSアプリ',
     downloadNow: '今すぐダウンロード',
     howToUse: '使い方を見る',
@@ -20,7 +20,7 @@ export const ja = {
   },
   about: {
     title: 'このアプリについて',
-    description: 'SOS Beaconは、災害時に通信インフラが使えない状況でも、あなたの居場所を音と光で周囲に知らせることができる緊急SOSアプリです。政府の地震調査委員会によると、南海トラフ巨大地震は今後30年以内に60～90％程度以上の確率で発生するとされています。いつ来るかわからない大規模災害に、今から備えましょう。',
+    description: 'SOS ビーコンは、災害時に通信インフラが使えない状況でも、あなたの居場所を音と光で周囲に知らせることができる緊急SOSアプリです。政府の地震調査委員会によると、南海トラフ巨大地震は今後30年以内に60～90％程度以上の確率で発生するとされています。いつ来るかわからない大規模災害に、今から備えましょう。',
   },
   features: {
     title: '主な機能',
@@ -100,7 +100,7 @@ export const ja = {
   },
   download: {
     title: 'ダウンロード',
-    description: '今すぐSOS Beaconをダウンロードして、緊急時に備えましょう',
+    description: '今すぐSOS ビーコンをダウンロードして、緊急時に備えましょう',
     comingSoon: '近日リリース予定',
     googlePlayAlt: 'Google Play で手に入れよう',
     appStoreAlt: 'App Store からダウンロード',
@@ -116,7 +116,7 @@ export const ja = {
   },
   faq: {
     title: 'よくある質問',
-    description: 'SOS Beaconについてのよくある質問',
+    description: 'SOS ビーコンについてのよくある質問',
     questions: [
       {
         question: 'インターネット接続は必要ですか？',
