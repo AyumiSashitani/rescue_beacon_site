@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     alternateLocale: 'en_US',
     images: [
       {
-        url: '/ogp_ja.png',
+        url: '/ogp.jpg',
         width: 1200,
         height: 630,
         alt: 'SOS Beacon - ワンタップでSOSを送信',
@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     title: 'SOS Beacon - 災害時SOSアプリ',
     description: '通信が使えない災害時でも、自分の存在を周囲に知らせるSOSビーコンアプリ',
     images: {
-      url: 'https://sos-beacon.vercel.app/ogp_ja.png',
+      url: 'https://sos-beacon.vercel.app/ogp.jpg',
       alt: 'SOS Beacon - ワンタップでSOSを送信',
     },
   },
