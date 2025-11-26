@@ -25,37 +25,33 @@ export default function Download() {
         <div className="max-w-3xl mx-auto">
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-12">
             <a
-              href="https://play.google.com/store/apps/details?id=com.ayumisashitani.sosbeacon"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="transform transition-transform hover:scale-105"
-            >
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={googlePlayBadge}
-                  alt={t.download.googlePlayAlt}
-                  width={200}
-                  height={77}
-                  className="w-auto h-[60px]"
-                />
-              </div>
-            </a>
-
-            <a
               href="https://apps.apple.com/jp/app/sos-%E3%83%93%E3%83%BC%E3%82%B3%E3%83%B3/id6755646233"
               target="_blank"
               rel="noopener noreferrer"
               className="transform transition-transform hover:scale-105"
             >
-              <div className="rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src={appStoreBadge}
-                  alt={t.download.appStoreAlt}
-                  width={200}
-                  height={67}
-                  className="w-auto h-[60px]"
-                />
-              </div>
+              <Image
+                src={appStoreBadge}
+                alt={t.download.appStoreAlt}
+                width={200}
+                height={67}
+                className="w-auto h-[50px]"
+              />
+            </a>
+
+            <a
+              href="https://play.google.com/store/apps/details?id=com.ayumisashitani.sosbeacon"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transform transition-transform hover:scale-105"
+            >
+              <Image
+                src={googlePlayBadge}
+                alt={t.download.googlePlayAlt}
+                width={200}
+                height={77}
+                className="w-auto h-[60px]"
+              />
             </a>
           </div>
 

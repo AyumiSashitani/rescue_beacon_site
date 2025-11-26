@@ -91,7 +91,7 @@ export default function Hero() {
                 alt="Get it on Google Play"
                 width={170}
                 height={50}
-                className="h-[50px] w-auto"
+                className="h-[60px] w-auto"
               />
             </a>
           </div>
